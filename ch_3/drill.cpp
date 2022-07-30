@@ -25,7 +25,7 @@ int main()
     int age;
     cout << "Enter the recipient's age: \n";
     cin >> age;
-    message = message + "I hear you just had a birthday and you are " + to_string(age) + "years old. ";
+    message = message + "I hear you just had a birthday and you are " + to_string(age) + " years old. ";
     if(age <= 0 || age >= 110)
     {
         simple_error("you're kidding!");
