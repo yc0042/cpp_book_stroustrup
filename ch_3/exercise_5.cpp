@@ -1,15 +1,26 @@
-// Exercise 5
+// Exercise 4
 #include "std_lib_facilities.h"
-// #include <format>
 
 int main()
 {
-    int values[3];
+    //TODO: smaller, larger, sum, difference, product, ratio
+    double val1, val2;
 
-    cout << "input 3 integer values: \n";
-    cin >> values[0] >> values[1] >> values[2];
+    cout << "Input your two (floating) values: \n";
+    cin >> val1 >> val2;
+    auto smaller = min(val1, val2);
+    auto larger = max(val1, val2);
+    auto sum = val1+val2;
+    auto difference = abs(val1-val2);
+    auto product = val1*val2;
+    
 
-    sort(values, values+3);
-    cout << values[0] << ", " << values[1] << ", " << values[2] << endl;
+    cout << "The smaller of the two values is " << smaller << endl;
+    cout << "The larger of the two values is " << larger << endl;
+    cout << "The sum of the two values is " << sum << endl;
+    cout << "The (absolute) difference of the two values is " << difference << endl;
+    cout << "The product of the two values is " << product << endl;
+    cout << "The ratio between the two values is " << val1/val2 << endl;
+
     return 0;
 }

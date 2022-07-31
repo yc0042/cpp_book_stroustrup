@@ -1,12 +1,12 @@
-// Exercise 5
+// Exercise 6
 #include "std_lib_facilities.h"
 // #include <format>
 
 int main()
 {
-    int values[3];
+    string values[3];
 
-    cout << "input 3 integer values: \n";
+    cout << "input 3 strings: \n";
     cin >> values[0] >> values[1] >> values[2];
 
     sort(values, values+3);

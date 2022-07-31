@@ -15,3 +15,5 @@ int main()
     cout << input_mi << " miles is equivalent to " << input_km << " kilometers. \n";
     return 0;
 }
+
+// Exercise 3: Skipped
