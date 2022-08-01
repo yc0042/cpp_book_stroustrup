@@ -89,7 +89,7 @@ int main()
 }
 */
 
-// Drill 6
+/* Drill 6
 
 int main()
 {
@@ -100,6 +100,40 @@ int main()
     min_val = val;
     cout << "You entered " << val << ", both the smallest and largest value entered so far." << endl;
     while(cin >> val)
+    {
+        cout << "You entered " << val << ".";
+        if(val == min(val, min_val))
+        {
+            cout << " The smallest value so far. \n";
+        }
+        else if (val == max(val, max_val))
+        {
+            cout << "The largest value so far. \n";
+        }
+        else
+        {
+            cout << "\n";
+        }
+        min_val = min(val, min_val);
+        max_val = max(val, max_val);
+    }
+    return 0;
+}
+*/
+
+// Drill 7
+
+int main()
+{
+    double val;
+    double val_m;
+    string unit;
+    double max_val, min_val;
+    cin >> val;
+    max_val = val;
+    min_val = val;
+    cout << "You entered " << val << ", both the smallest and largest value entered so far." << endl;
+    while(cin >> val >> unit)
     {
         cout << "You entered " << val << ".";
         if(val == min(val, min_val))
