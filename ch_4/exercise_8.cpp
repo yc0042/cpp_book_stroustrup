@@ -37,8 +37,8 @@ int main()
         {
             cout << "It would take the amount of rice for " << i << " squares to reach 1000000000 grains. \n";
             b_flag = true;
-            break;
         }
     }
+    cout << "The total number of grains is " << sum_of_powers << endl;
     return 0;
 }
